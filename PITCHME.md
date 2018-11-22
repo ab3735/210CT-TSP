@@ -1,4 +1,4 @@
-# Traveling Salesman Problem
+## Traveling Salesman Problem
 
 Based on https://developers.google.com/optimization/routing/tsp and https://en.wikipedia.org/wiki/Travelling_salesman_problem
 
@@ -12,7 +12,7 @@ The travelling salesman problem (TSP) asks the following question: "Given a list
 
 ---
 
-# The problem
+## The problem
 
 Back in the days when salesmen traveled door-to-door hawking vacuums and encyclopedias, they had to plan their routes, from house to house or city to city. The shorter the route, the better. Finding the shortest route that visits a set of locations is an exponentially difficult problem: finding the shortest path for 20 cities is much more than twice as hard as 10 cities.
 
