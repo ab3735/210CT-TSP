@@ -10,18 +10,21 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 ![](img/eg1.png)
 
+4+2+5+3 = 14
+
 +++
 
 ![](img/eg2.png)
+
+3+1+2+1 = 7
 
 +++
 
 ![Video](https://www.youtube.com/embed/XBTiQ6IvgmM?start=4)
 
-
 ---
 
-- One of the most famous problems in computer science.
+- One of the most famous problems in Computer Science.
 - Given a **list of cities** and the **distances between each pair of cities**, what is the shortest possible route that visits each city and returns to the origin city?
 - **NP-hard problem**!
 
