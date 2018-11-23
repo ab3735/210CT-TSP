@@ -3,7 +3,7 @@
 ##### Kamal Bentahar
 
 @snap[south]
-@size[0.5em](Based on https://developers.google.com/optimization/routing/tsp and https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+@size[0.3em](Based on https://developers.google.com/optimization/routing/tsp and https://en.wikipedia.org/wiki/Travelling_salesman_problem)
 @snapend
 
 ---
