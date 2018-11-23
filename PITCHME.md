@@ -4,6 +4,26 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 ---
 
+![](img/eg0.png)
+
++++
+
+![](img/eg1.png)
+
++++
+
+![](img/eg2.png)
+
++++
+
+![Video](https://youtu.be/XBTiQ6IvgmM)
+
++++
+
+---?video=https://youtu.be/XBTiQ6IvgmM
+
+---
+
 The Traveling Salesman Problem (TSP) is one of the most famous problems in computer science. In what follows, we'll describe the problem and show you how to find a solution.
 
 +++
