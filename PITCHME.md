@@ -160,12 +160,11 @@ Modern methods can find solutions for millions of cities within a reasonable tim
 
 +++
 
-### Constructive heuristics
+### Constructive heuristics - greedy algorithm
 
-The nearest neighbour (NN) algorithm (a greedy algorithm) lets the salesman choose the nearest unvisited city as his next move.
+- Nearest neighbour (NN) algorithm lets the salesman choose the nearest unvisited city as his next move.
 
 ![](img/Nearestneighbor.gif)
-
 
 ---
 
@@ -174,9 +173,7 @@ The nearest neighbour (NN) algorithm (a greedy algorithm) lets the salesman choo
 +++
 
 ### Pairwise exchange
-The pairwise exchange or 2-opt technique involves iteratively removing two edges and replacing these with two different edges that reconnect the fragments created by edge removal into a new and shorter tour. Similarly, the 3-opt technique removes 3 edges and reconnects them to form a shorter tour. These are special cases of the k-opt method. Note that the label Lin–Kernighan is an often heard misnomer for 2-opt. Lin–Kernighan is actually the more general k-opt method.
-
-For Euclidean instances, 2-opt heuristics give on average solutions that are about 5% better than Christofides' algorithm. If we start with an initial solution made with a greedy algorithm, the average number of moves greatly decreases again and is {\displaystyle O(n)} O(n). For random starts however, the average number of moves is {\displaystyle O(n\log(n))} {\displaystyle O(n\log(n))}. However whilst in order this is a small increase in size, the initial number of moves for small problems is 10 times as big for a random start compared to one made from a greedy heuristic. This is because such 2-opt heuristics exploit 'bad' parts of a solution such as crossings. These types of heuristics are often used within Vehicle routing problem heuristics to reoptimize route solutions.
+- The pairwise exchange or 2-opt technique involves iteratively removing two edges and replacing these with two different edges that reconnect the fragments created by edge removal into a new and shorter tour.
 
 +++
 
