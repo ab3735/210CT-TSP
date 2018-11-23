@@ -16,11 +16,11 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 +++
 
-![Video](https://youtu.be/XBTiQ6IvgmM)
+![Video](https://www.youtube.com/embed/XBTiQ6IvgmM)
 
 +++
 
----?video=https://youtu.be/XBTiQ6IvgmM
+---?video=https://www.youtube.com/embed/XBTiQ6IvgmM
 
 ---
 
