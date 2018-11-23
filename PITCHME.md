@@ -56,9 +56,8 @@ Shortest tour?
 
 - Finding the shortest path for 20 cities is much more than twice as hard as 10 cities.
 
-@size[0.5em]
-
-| Number of cities n | Number of possible paths (n-1)!/2 |
+@size[0.5em](
+| Number of cities n | Number of paths (n-1)!/2 |
 | ------------ | ------------- |
 |3|1|
 |4|3|
@@ -71,6 +70,7 @@ Shortest tour?
 |15|43,589,145,600|
 |20|6.082 × 1016|
 |71|5.989 × 1099|
+)
 
 +++
 
