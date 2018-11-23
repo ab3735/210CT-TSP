@@ -1,10 +1,12 @@
-## Traveling Salesman Problem
+## Traveling Salesman Problem (TSP)
 
-Based on https://developers.google.com/optimization/routing/tsp and https://en.wikipedia.org/wiki/Travelling_salesman_problem
+@size[0.5em](Based on https://developers.google.com/optimization/routing/tsp and https://en.wikipedia.org/wiki/Travelling_salesman_problem)
 
 ---
 
 ![](img/eg0.png)
+
+Shortest tour?
 
 +++
 
@@ -24,7 +26,7 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 ---
 
-- One of the most famous problems in Computer Science.
+- One of the most famous problems in CS.
 - Given a **list of cities** and the **distances between each pair of cities**, what is the shortest possible route that visits each city and returns to the origin city?
 - **NP-hard problem**!
 
@@ -32,9 +34,9 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 ## Model
 - Weighted graph:
-    - locations are the nodes
-    - edges direct routes between the nodes.
-    - weight of each edge is the distance between the nodes.
+    - Nodes: cities
+    - Edges: direct routes between cities.
+    - Edge weights: distance between cities.
 - Goal: find the path with the shortest sum of weights.
 
 +++
@@ -51,6 +53,7 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 - Finding the shortest path for 20 cities is much more than twice as hard as 10 cities.
 
 |Number of cities $n$|Number of possible paths: $\displaystyle {\frac {1}{2}}(n-1)!$|
+| ------------ | ------------- |
 |3|1|
 |4|3|
 |5|12|
