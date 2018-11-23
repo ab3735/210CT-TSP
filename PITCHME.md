@@ -16,35 +16,56 @@ Based on https://developers.google.com/optimization/routing/tsp and https://en.w
 
 +++
 
-![Video](https://www.youtube.com/embed/XBTiQ6IvgmM)
+![Video](https://www.youtube.com/embed/XBTiQ6IvgmM?start=4)
 
-+++
-
----?video=https://www.youtube.com/embed/XBTiQ6IvgmM
 
 ---
 
-The Traveling Salesman Problem (TSP) is one of the most famous problems in computer science. In what follows, we'll describe the problem and show you how to find a solution.
-
-+++
-
-The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" It is an NP-hard problem in combinatorial optimization, important in operations research and theoretical computer science.
+- One of the most famous problems in computer science.
+- Given a **list of cities** and the **distances between each pair of cities**, what is the shortest possible route that visits each city and returns to the origin city?
+- **NP-hard problem**!
 
 ---
 
-## The problem
+## Model
+- Weighted graph:
+    - locations are the nodes
+    - edges direct routes between the nodes.
+    - weight of each edge is the distance between the nodes.
+- Goal: find the path with the shortest sum of weights.
 
-Back in the days when salesmen traveled door-to-door hawking vacuums and encyclopedias, they had to plan their routes, from house to house or city to city. The shorter the route, the better. Finding the shortest route that visits a set of locations is an exponentially difficult problem: finding the shortest path for 20 cities is much more than twice as hard as 10 cities.
++++
+
+### Exhaustive search
+- Search all possible paths.
+- Guaranteed to find the shortest...
+- ... but is computationally intractable for all but small sets of locations.
 
 +++
 
-An exhaustive search of all possible paths would be guaranteed to find the shortest, but is computationally intractable for all but small sets of locations. For larger problems, optimization techniques are needed to intelligently search the solution space and find near-optimal solutions.
+## What is the issue?
+
+- Finding the shortest path for 20 cities is much more than twice as hard as 10 cities.
+
+|Number of cities $n$|Number of possible paths: $\displaystyle {\frac {1}{2}}(n-1)!$|
+|3|1|
+|4|3|
+|5|12|
+|6|60|
+|7|360|
+|8|2 520|
+|9|20,160|
+|10|181,440|
+|15|43,589,145,600|
+|20|6.082 × 1016|
+|71|5.989 × 1099|
 
 +++
 
-Mathematically, traveling salesman problems can be represented as a graph, where the locations are the nodes and the edges (or arcs) represent direct routes between the nodes. The weight of each edge is the distance between the nodes. The goal is to find the path with the shortest sum of weights. Below, we see a simple four-node graph and the shortest cycle that visits every node: 
+![](img/xkcd)
 
 +++
+
 
 In addition to finding solutions to the classical Traveling Salesman Problem, OR-Tools also provides methods for more general types of TSPs, including the following:
 
